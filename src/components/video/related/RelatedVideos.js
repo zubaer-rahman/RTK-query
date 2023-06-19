@@ -3,12 +3,12 @@ import Error from "../../ui/Error";
 import RelatedVideoLoader from "../../ui/loaders/RelatedVideoLoader";
 import RelatedVideo from "./RelatedVideo";
 
-export default function RelatedVideos({ title }) {
+export default function RelatedVideos({ id, title }) {
   const {
     data: relatedVideos,
     isError,
     isLoading,
-  } = useGetRelatedVideosQuery(title);
+  } = useGetRelatedVideosQuery({ id, title });
   let content = null;
   if (isLoading) {
     content = (
@@ -25,12 +25,14 @@ export default function RelatedVideos({ title }) {
   if (!isLoading && !isError && relatedVideos?.length === 0) {
     content = <Error message="No related videos found!" />;
   }
-  if (!isLoading && !isError && relatedVideos.length > 0){
-    content = relatedVideos.map((relatedVideo) => <RelatedVideo key={relatedVideo.id} relatedVideo={relatedVideo}/> )  
+  if (!isLoading && !isError && relatedVideos.length > 0) {
+    content = relatedVideos.map((relatedVideo) => (
+      <RelatedVideo key={relatedVideo.id} relatedVideo={relatedVideo} />
+    ));
   }
-    return (
-      <div className="col-span-full lg:col-auto max-h-[570px] overflow-y-auto">
-        {content}
-      </div>
-    );
+  return (
+    <div className="col-span-full lg:col-auto max-h-[570px] overflow-y-auto">
+      {content}
+    </div>
+  );
 }

@@ -4,7 +4,7 @@
       "id": 1,
       "title": "যে ১০ টি ভুল বিগিনার রিয়্যাক্ট ডেভেলপাররা করে থাকেন",
       "description": "আপনারা যারা বিগিনার হিসেবে রিয়্যাক্ট জেস নিয়ে কাজ করা শুরু করেছেন, তারা রিয়্যাক্ট এর বেশ কিছু কনসেপ্ট ঠিক মতো আয়ত্ত না করতে পারার কারণে বিচিত্র কিছু সমস্যার সম্মুখীন হন এবং শেষ পর্যন্ত বুঝতে না পেরে হতাশ হয়ে পড়েন। তাদের জন্যই এই ভিডিওটি। এই ভিডিওতে আমি এমন ১০টি সমস্যার কথা তুলে ধরেছি যেগুলো বিগিনার হিসেবে আপনারা অহরহ সম্মুখীন হবেন। আশা করি ভিডিওটি দেখলে আপনাদের এই সমস্যাগুলো নিয়ে আর কনফিউশন থাকবেনা।",
-      "author": "Learn with Sumit",
+      "author": "Learn with Zubu",
       "date": "May 10, 2022",
       "duration": "10:12",
       "views": "2.1k",
@@ -35,20 +35,20 @@
     },
     {
       "id": 4,
-      "title": "Debounce Function in JavaScript - JavaScript Job Interview question",
-      "description": "In this video, I have explained about the debounce function in JavaScript. This is a common question interviewers ask at Job Interviews. If you watch this video carefully, you will understand what is debounce and how to handle it with custom debounce function.",
-      "author": "Learn with Sumit",
+      "title": "Choosing Your Coding Path: Web or Android Development?",
+      "description": "Are you interested in a career in development, but not sure whether to pursue web or Android development? This video breaks down the differences between these two paths and helps you decide which is right for you. We'll compare the skills you need, the job prospects, and the challenges and opportunities that come with each field. Join us as we dive into the ultimate showdown between web and Android development!",
+      "author": " 6 Pack Programmer",
       "date": "Jan 06, 2022",
       "duration": "10:12",
       "views": "2.1k",
-      "link": "https://www.youtube-nocookie.com/embed/dD9O8DnIBj4",
-      "thumbnail": "https://i3.ytimg.com/vi/dD9O8DnIBj4/maxresdefault.jpg"
+      "link": "https://www.youtube-nocookie.com/embed/AlZo9IvlN2s",
+      "thumbnail": "https://i.ytimg.com/vi/AlZo9IvlN2s/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCq7PyIm8PKXTcohVmKh0gCNnUvdQ"
     },
     {
       "id": 5,
-      "title": "SASS Tutorial in English - Overview of SASS",
+      "title": "SASS Tutorial in English - Overview of SASS ",
       "description": "In this video, I have given a high level overview of popular CSS Pre-processor SASS which helps us managing our styles at scale. If you have a basic understanding of CSS & JavaScript, this 10 mins SASS Tutorial will help you getting started with SASS.",
-      "author": "Learn with Sumit",
+      "author": "Learn with Zubu",
       "date": "Nov 22, 2021",
       "duration": "10:12",
       "views": "2.1k",
@@ -76,50 +76,6 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/smDa6hoxLKI",
       "thumbnail": "https://i3.ytimg.com/vi/smDa6hoxLKI/maxresdefault.jpg"
-    },
-    {
-      "title": "",
-      "description": "",
-      "author": "",
-      "date": "",
-      "duration": "",
-      "views": "",
-      "link": "",
-      "thumbnail": "",
-      "id": 8
-    },
-    {
-      "title": "SASS Tutorial in English - Overview of SASS",
-      "description": "In this video, I have given a high level overview of popular CSS Pre-processor SASS which helps us managing our styles at scale. If you have a basic understanding of CSS & JavaScript, this 10 mins SASS Tutorial will help you getting started with SASS.",
-      "author": "Learn with Sumit",
-      "date": "Nov 22, 2021",
-      "duration": "10:12",
-      "views": "2.1k",
-      "link": "https://www.youtube-nocookie.com/embed/4tV1Mfi4fMA",
-      "thumbnail": "https://i3.ytimg.com/vi/4tV1Mfi4fMA/maxresdefault.jpg",
-      "id": 9
-    },
-    {
-      "title": "test",
-      "description": "test",
-      "author": "test",
-      "date": "testtest",
-      "duration": "testtest",
-      "views": "",
-      "link": "test",
-      "thumbnail": "test",
-      "id": 10
-    },
-    {
-      "title": "trerte",
-      "description": "ete",
-      "author": "tewtet",
-      "date": "ertert",
-      "duration": "ertertert",
-      "views": "ert",
-      "link": "https://www.youtube-nocookie.com/embed/dD9O8DnIBj4",
-      "thumbnail": "https://i3.ytimg.com/vi/4tV1Mfi4fMA/maxresdefault.jpg",
-      "id": 11
     }
   ]
 }

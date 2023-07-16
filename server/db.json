@@ -4,9 +4,9 @@
       "name": "Slow Horses (Deluxe Edition)",
       "author": "Mick Herron",
       "thumbnail": "https://m.media-amazon.com/images/I/51Ga5GuElyL._SX331_BO1,204,203,200_.jpg",
-      "price": 14,
-      "rating": 3,
-      "featured": false,
+      "price": "14.99",
+      "rating": "4",
+      "featured": "false",
       "id": 1
     },
     {
@@ -14,18 +14,54 @@
       "author": "Laura Dave",
       "thumbnail": "https://m.media-amazon.com/images/P/1501171348.01._SCLZZZZZZZ_SX500_.jpg",
       "price": 13.99,
-      "rating": 4,
-      "featured": false,
+      "rating": "5",
+      "featured": "false",
       "id": 2
     },
     {
-      "name": "Eloquent JavaScript, 3rd Edition",
-      "author": "Marijn Haverbeke",
-      "thumbnail": "https://m.media-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg",
-      "price": 23.99,
+      "name": "বেলা ফুরাবার আগে (পেপারব্যাক)",
+      "author": "আরিফ আজাদ",
+      "thumbnail": "https://wafilife-media.wafilife.com/uploads/2020/01/Bela-Furabar-Agey-Front.png",
+      "price": 251,
       "rating": 4,
+      "featured": false,
+      "id": 6
+    },
+    {
+      "name": "জীবন যেখানে যেমন (পেপারব্যাক)",
+      "author": "আরিফ আজাদ",
+      "thumbnail": "https://d1jpltibqvso3j.cloudfront.net/images/product/325000/324900/250X360/324900.png",
+      "price": "199.99",
+      "rating": 5,
       "featured": true,
-      "id": 4
+      "id": 7
+    },
+    {
+      "name": "Soft Skills: The software developer's life manual 1st Edition",
+      "author": "John Sonmez",
+      "thumbnail": "https://m.media-amazon.com/images/I/51WiLueukSL.jpg",
+      "price": "29.99",
+      "rating": "5",
+      "featured": "false",
+      "id": 8
+    },
+    {
+      "name": "ক্র্যাক দ্যা প্রিভিয়াস কোয়েশচেনস (পেপারব্যাক)",
+      "author": "মোঃ আহসানুর হক সৈকত তালুকদার",
+      "thumbnail": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Crack_The_Previous_Questions-Md_Ahsanur_Huq_Soikot_Talukdar-db967-247700.jpg",
+      "price": 600,
+      "rating": "4",
+      "featured": false,
+      "id": 9
+    },
+    {
+      "name": "3q53453",
+      "author": "3535",
+      "thumbnail": "5435353535",
+      "price": 3535,
+      "rating": 1,
+      "featured": false,
+      "id": 10
     }
   ]
 }

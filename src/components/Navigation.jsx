@@ -1,19 +1,20 @@
-import React from "react";
-import Logo from "../assets/logo.svg"
-
+import React, { useEffect, useState } from "react";
+import Logo from "../assets/logo.svg";
+import { useDispatch } from "react-redux";
+import { setSearchInput } from "../features/book/bookSlice";
 
 export default function Navigation() {
+  const dispatch = useDispatch();
+  const handleSearch = (event) => {
+    dispatch(setSearchInput(event.target.value.toLowerCase()));
+  };
   return (
     <nav class="py-4 2xl:px-6">
       <div class="container flex items-center justify-between">
         <img src={Logo} width="150px" class="object-contain" />
 
         <ul class="hidden md:flex items-center space-x-6">
-          <a
-            class="font-semibold cursor-pointer"
-            href="/"
-            id="lws-bookStore"
-          >
+          <a class="font-semibold cursor-pointer" href="/" id="lws-bookStore">
             <li>Book Store</li>
           </a>
           <a class="cursor-pointer" href="/add" id="lws-addBook">
@@ -38,6 +39,7 @@ export default function Navigation() {
             <input
               type="text"
               placeholder="Filter books..."
+              onChange={handleSearch}
               class="search"
               id="lws-search"
             />

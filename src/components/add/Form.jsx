@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useAddBookMutation } from "../../features/api/apiSlice";
+import { useNavigate } from "react-router-dom";
 
 export default function Form() {
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [author, setAuthor] = useState("");
   const [thumbnail, setThumbnail] = useState("");
@@ -18,8 +20,9 @@ export default function Form() {
     setRating(0);
     setFeatured(false);
   };
-  const handleSubmit = async () => {
-    await addBook({
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addBook({
       name,
       author,
       thumbnail,
@@ -29,8 +32,12 @@ export default function Form() {
     });
     resetForm();
   };
+
+  useEffect(() => {
+    isSuccess && navigate("/");
+  }, [navigate, isSuccess]);
   return (
-    <form class="book-form" onSubmit={handleSubmit}>
+    <form class="book-form" method="POST" onSubmit={handleSubmit}>
       <div class="space-y-2">
         <label for="lws-bookName">Book Name</label>
         <input

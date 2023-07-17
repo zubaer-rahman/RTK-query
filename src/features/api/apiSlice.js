@@ -7,13 +7,12 @@ export const apiSlice = createApi({
   tagTypes: ["Books", "Book"],
   endpoints: (builder) => ({
     getBooks: builder.query({
-      query: () => "/books",
-      keepUnusedDataFor: 600,
+      query: () => "/books", 
       providesTags: ["Books"],
     }),
     getBook: builder.query({
       query: (id) => `/books/${id}`,
-      providesTags: (result, error, arg) => [{ type: "Book", id: arg.id }],
+      providesTags: (result, error, arg) => [{ type: "Book", id: arg }],
     }),
     addBook: builder.mutation({
       query: (data) => ({

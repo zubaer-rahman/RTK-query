@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useUpdateBookMutation } from "../../features/api/apiSlice";
+import { useNavigate } from "react-router-dom";
 
 export default function Form({ book }) {
+  const navigate = useNavigate();
   const {
     name: initialName,
     author: initialAuthor,
@@ -20,7 +22,7 @@ export default function Form({ book }) {
 
   const [updateBook, { data: updatedBook, isLoading, isError, isSuccess }] =
     useUpdateBookMutation();
-  const handleUpdate = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     updateBook({
       id: id,
@@ -34,9 +36,12 @@ export default function Form({ book }) {
       },
     });
   };
+  useEffect(() => {
+    isSuccess && navigate("/");
+  }, [navigate, isSuccess])
 
   return (
-    <form class="book-form" onSubmit={handleUpdate}>
+    <form class="book-form" method="POST" onSubmit={handleSubmit}>
       <div class="space-y-2">
         <label for="lws-bookName">Book Name</label>
         <input
@@ -101,7 +106,7 @@ export default function Form({ book }) {
             name="rating"
             min="1"
             max="5"
-            onChange={(e) => setRating(e.target.value)}
+            onChange={(e) => setRating(Number(e.target.value))}
           />
         </div>
       </div>
@@ -111,9 +116,10 @@ export default function Form({ book }) {
           value={featured}
           id="lws-featured"
           type="checkbox"
+          checked={featured}
           name="featured"
           class="w-4 h-4"
-          onChange={(e) => setFeatured(e.target.value)}
+          onChange={(e) => setFeatured(!featured)}
         />
         <label for="lws-featured" class="ml-2 text-sm">
           {" "}
@@ -124,6 +130,9 @@ export default function Form({ book }) {
       <button type="submit" disabled={isLoading} class="submit" id="lws-submit">
         Update Book
       </button>
+      {
+        isSuccess && <p>Edited succesfully</p>
+      }
     </form>
   );
 }
